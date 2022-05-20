@@ -1,0 +1,25 @@
+Algoritmo ejercicio_5_taller3
+	//Para un periodo de 10 años se invierte en un fondo de capital $1.000.000 en
+		//los años 1,3,5,7 y 9, y se invierte $1.500.00 en los años 2,4,6,8 y 10. Calcule
+		//el valor del capital al final de los 10 años si sabemos que el interés es del
+		//	15% anual.
+	
+	//definimos las variables 
+	Definir capital1,capital2 Como Real
+	
+	//inicializamos los contados para contar los valores entre los 10 años 
+	capital1=0
+	capital2=0
+	//
+	para i=1 Hasta 10 Con Paso 1 Hacer
+		si i mod 2=1 Entonces
+			//hacemos la operacion para calcular el porcentaje entre los 10 años
+			capital1=capital1+(1000000*0.15)
+		SiNo
+			capital2=capital2+(1500000*0.15)
+	FinSi
+	
+FinPara
+//Mostrar el resultado entre los 10 años
+Escribir "el valor total en tres los 10 año es ",capital2+capital2
+FinAlgoritmo
